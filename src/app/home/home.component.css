@@ -1,0 +1,35 @@
+.main {
+  @apply flex flex-col h-screen w-screen;
+  @apply items-center justify-center;
+  @apply bg-gradient-to-tr from-red-600 to-amber-400 from-5%;
+}
+.hero {
+  @apply flex flex-col items-center justify-center;
+  @apply max-w-xl h-48;
+  @apply w-5/6;
+  @apply bg-slate-50;
+  @apply shadow;
+  @apply rounded-lg;
+  @apply p-8;
+}
+.hero-title {
+  @apply text-2xl font-bold text-slate-800;
+  @apply mb-4;
+}
+.hero-subtitle {
+  @apply text-gray-500;
+  @apply mb-2;
+}
+.lesson-container {
+  @apply h-3/5 mt-4 p-8 w-5/6;
+  @apply rounded-lg bg-slate-100;
+  @apply grid grid-cols-4;
+  @apply content-start;
+  @apply xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+}
+.lesson {
+  @apply rounded-3xl bg-slate-50 shadow-md;
+  @apply text-center p-2 font-mono;
+  @apply hover:shadow-lg hover:bg-orange-200 transition-all duration-200 hover:font-bold;
+  @apply active:shadow-inner active:bg-orange-300;
+}

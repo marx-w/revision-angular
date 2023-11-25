@@ -1,0 +1,18 @@
+
+<main class="main">
+  <!-- Above -->
+  <section class="hero">
+    <h1 class="hero-title">Angular Playground</h1>
+    <h2 class="hero-subtitle">By Marx Wang.</h2>
+    <p class="hero-descrip">
+      A place that I stored stuff that I've learned.
+    </p>
+  </section>
+  <!--  Main  -->
+  <section class="lesson-container">
+    <!--   Section Left   -->
+    @for (url of urls; track url.label ; let i = $index) {
+      <a class="lesson" [href]="url.url">{{url.label}}</a>
+    }
+  </section>
+</main>
