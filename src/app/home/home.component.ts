@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Link } from '../../assets/types';
+import { Link } from '../../types';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +14,10 @@ export class HomeComponent {
     {
       url: '/',
       label: 'Home',
+    },
+    {
+      url: '/tic-tac-toe',
+      label: 'Tic Tac Toe',
     }
   ];
 }
